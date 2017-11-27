@@ -18,9 +18,9 @@ app.use((req, res, next) => {
     next(); // middleware shud call next, else code after this block will not get executed.
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public'));
 
